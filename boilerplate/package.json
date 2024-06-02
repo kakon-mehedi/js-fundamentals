@@ -1,0 +1,24 @@
+{
+	"name": "typescript-boilerplate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "npm run build && npm run kakon",
+		"kakon": "tsc -w",
+		"start2": "node dist/index.js",
+		"build": "npm run clean",
+		"clean": "rimraf dist",
+		"dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+	},
+	"author": "kakon-mehedi",
+	"license": "ISC",
+	"dependencies": {
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5"
+	}
+}
