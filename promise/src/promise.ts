@@ -1,0 +1,3 @@
+// Creating Promise
+
+// Consumping Promise
